@@ -14,6 +14,6 @@ git fetch --tags --force
 latestVersionTag=$(git describe --tags "$(git rev-list --tags --max-count=1)");
 echo "File Content: $content"
 echo "Updating Version To: $latestVersionTag"
-updatedContent=$(cat "$filename" | sed "s/\${VERSION}/$latestVersionTag/g")
+updatedContent=$latestVersionTag
 echo "Updated Content: $updatedContent"
 echo "$updatedContent" > "$filename"
