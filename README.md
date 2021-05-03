@@ -10,7 +10,7 @@ This action was forked from https://github.com/brettdorrans/write-version-to-fil
 
 ### `filename`
 
-**Required** - The filename to write the version tag to. Default `/.VERSION`
+**Required** - The filename to write the version tag to. Default `VERSION`
 
 ## Example usage
 
@@ -31,5 +31,5 @@ jobs:
       id: version
       uses: brettdorrans/write-version-to-file@master
       with:
-        filename: '/.VERSION'
+        filename: 'VERSION'
 ```
